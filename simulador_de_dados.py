@@ -6,7 +6,7 @@ class SimuladorDeDado:
     def __init__(self):
         self.valor_inicial = 1
         self.valor_final = 6
-        self.mensagem = 'Você gostaria de jogar o dado?'
+        self.mensagem = 'Você gostaria de jogar o dado??'
 
     def iniciar(self):
         resposta = input(self.mensagem)
