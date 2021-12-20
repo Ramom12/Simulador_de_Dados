@@ -1,0 +1,10 @@
+user.name=Ramom
+user.email=ramom.santos@aluno.fapce.edu.br
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/Ramom12/Simulador_de_Dados.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
