@@ -5,22 +5,22 @@ class SimuladorDeDado:
     def __init__(self):
         self.valor_inicial = 1
         self.valor_final = 6
-        # Layout
+        # Criação do layout
         self.layout = [
             [sg.Text('Você gostaria de jogar o dado?')],
-            [sg.Button('sim'),sg.Button('Não')]
+            [sg.Button('YES'),sg.Button('NOT')]
         ]
-    
+    #Inicio da simulação
     def Iniciar(self):
         self.janela = sg.Window('Simulador de Dado',layout=self.layout)
         self.eventos, self.valores = self.janela.Read()
         try:
-            if self.eventos == 'sim' or self.eventos == 's':
+            if self.eventos == 'YES' or self.eventos == 's':
                 self.GerarValorDoDado()
-            elif self.eventos == 'Não' or self.eventos == 'n':
+            elif self.eventos == 'NOT' or self.eventos == 'n':
                 print('Obrigado por participar!')
             else:
-                print('Favor digitar sim ou não')
+                print('Erro, favor clicar em YES OR NOT')
         except:
             print('Ocorreu um erro ao receber sua resposta')
     
